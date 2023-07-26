@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Sonic info</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Description" content="Фан-сообщество о синем ежике Сонике. Узнайте больше 
+        о легендарном герое большого количества игр и мультфильмов. Персонажи Соника, актуальные новости, эксклюзивные материалы">
+        <meta name="Keywords" content="Соник, вселенная Соника, персонажи Соника, вступить в фан-сообщество">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Sonic Info">
+        <meta property="og:url" content="feedback.html"> <!--адрес сайта http...-->
+        <meta property="og:title" content="Фан-сообщество Соника — Sonic Info"/>
+        <meta property="og:description" content="Фан-сообщество о синем ежике Сонике. Узнайте больше 
+        о легендарном герое большого количества игр и мультфильмов. Персонажи Соника, актуальные новости, эксклюзивные материалы"/>
+        <meta property="og:image" content="img/img-ogp.jpeg"> <!--адрес картинки http...-->
+        <meta property="og:image:width" content="1500">
+        <meta property="og:image:height" content="786">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&family=Kanit&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="feedback.css">
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <header>
+                    <h1>Sonic info</h1>
+                    <ul class="header-list">
+                        <li><a href="main.html">Главная</a></li>
+                        <li><a href="characters.html">Персонажи</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                    </ul>
+                </header>
+                <main>
+                    <h2>Напишите нам</h2>
+                    <p class="main-subtitle">
+                        Вступите в наше дружное фан-сообщество Sonic the Hedgehog. У нас всегда 
+                        свежие новости, интересные обсуждения, тематические плюшки и многое другое!
+                    </p>
+                    <div class="ring">
+                        <img src="img/ring.png" alt="ring">
+                    </div>
+                    <form action="#" method="get">
+                        <table>
+                            <tr>
+                                <td>Ваше ФИО</td>
+                                <td><input type="text" name="name" id="input-name" size="35"></td>
+                            </tr>
+                            <tr>
+                                <td>Ваша электронная почта</td>
+                                <td><input type="text" name="email" id="input-email" size="35"></td>
+                            </tr>
+                            <tr>
+                                <td>Ваш любимый персонаж</td>
+                                <td>
+                                    <select name="favourite-character">
+                                        <option value="sonic">Соник</option>
+                                        <option value="tails">Тейлз</option>
+                                        <option value="knuckles">Наклз</option>
+                                        <option value="amy">Эми Роуз</option>
+                                        <option value="cream">Крим</option>
+                                        <option value="rouge">Руж</option>
+                                        <option value="shadow">Шедоу</option>
+                                        <option value="eggman">Эггман</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">Что больше всего интересует в Сообществе</td>
+                                <td>
+                                    <input type="checkbox" name="goal[]" value="0">
+                                    Хотите получать актуальные новости об играх, мультах с Соником<br>
+                                    <input type="checkbox" name="goal[]" value="1">
+                                    Хотите знать больше о вселенной Соника и его персонажах<br>
+                                    <input type="checkbox" name="goal[]" value="2">
+                                    Хотите общаться с участниками Сообщества, обмениваться интересной информацией о Сонике<br>
+                                    <input type="checkbox" name="goal[]" value="3">
+                                    У Вас есть эксклюзивные материалы о Сонике и Вы хотите участвовать в жизни Сообщества<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ваш комментарий</td>
+                                <td><textarea name="optionally" cols="40" rows="5"></textarea></td>
+                            </tr>
+                        </table>
+                        <input type="submit" value="Отправить заявку" id="input-submit">
+                    </form>
+                </main>
+            </div>
+            <footer>
+                <h3>Наши социальные сети</h3>
+                <nav>
+                    <ul class="footer-list">
+                        <li><i class="fa-brands fa-instagram"></i><a href="#">sonic.info</a></li>
+                        <li><i class="fa-brands fa-facebook-f"></i><a href="#">sonic.info</a></li>
+                        <li><i class="fa-regular fa-envelope"></i><a href="#">sonic-info@gmail.com</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </body>
+</html>

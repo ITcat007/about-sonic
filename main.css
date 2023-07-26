@@ -1,0 +1,303 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    font-family: 'Jura', Arial, sans-serif;
+    color: aliceblue;
+    background-color: #010b2c;
+    background-image: url(img/sonic-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 80% 10%;
+}
+
+.wrapper{
+   min-height: 100%;
+   margin-bottom: -50px;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header{
+    height: 200px;
+    max-width: 100%;
+    border-bottom: 1px solid #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+main{  
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+main article p{
+    margin-bottom: 1rem;
+}
+
+.header-list{
+    float: right;
+    list-style-type: none;
+    margin-top: 70px;
+}
+
+.header-list li{
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.header-list li:last-child{
+    padding-right: 0;
+}
+
+.header-list li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: aliceblue;
+}
+
+.header-list li a:hover {
+    text-decoration: underline;
+    color: #6dd1ee;
+    transition: all 0.5s ease;
+ }
+
+h1{
+    float: left;
+    margin-top: 70px;
+    font-family: 'Kanit', Arial, sans-serif;
+    font-size: 3rem;
+    line-height: 1;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #6dd1ee, #003cff);
+}
+
+h2{
+    color: #6dd1ee;
+    margin-bottom: 20px;
+}
+
+h3{
+    margin: 0 auto 25px;
+}
+
+.column-left{
+    float:left;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+
+.column-right{
+    float: right;
+    width: 70%;
+    line-height: 1.5;
+}
+
+.video{
+    width: 360px;
+    height: 205px;
+    margin-bottom: 30px;
+}
+
+.video iframe{
+    text-align: center;
+    width: 100%; 
+    height:100%;
+}
+
+.map{
+    float: left;
+    position: relative;
+    width: 360px;
+    height: 205px;
+}
+
+.map-img{
+    width: 100%;
+}
+
+.map-icon{
+    width: 70px;
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    animation: jumping 2s linear 0s infinite;
+}
+
+@keyframes jumping{
+    0% {left: 0; bottom: 20%;}
+    20% {left: 20%; bottom: 70%;}
+    40% {left: 40%; bottom: 20%;}
+    80% {left: 60%; bottom: 70%;}
+    100% {left: 80%; bottom: 20%;}
+}
+
+.clear{
+    clear: both;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-list{
+    list-style-type: none;
+    text-align: center;
+}
+
+.footer-list li{
+   display: inline-block;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.footer-list li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.footer-list li a:hover {
+    text-decoration: underline;
+    color: #6dd1ee;
+    transition: all 0.5s ease;
+ }
+
+footer nav ul li i {
+    margin-right: 7px;
+    font-size: 1.3rem;
+}
+
+@media (max-width:1440px) {
+    body, html{
+       font-size: 16px;
+    }
+
+    .column-left{
+        width: 35%;
+        padding-left: 30px;
+    }
+
+    .column-right{
+        width: 65%;
+        padding-right: 30px;
+    }
+
+    .video, .map {
+        width: 260px;
+        height: 146px;       
+    }
+
+    .map-icon{
+        width: 40px;
+    }
+}
+
+@media (max-width:926px){
+    main{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .column-right{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+        text-align: justify;
+        float: none;
+    }
+
+    .column-left{
+        float: left;
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+    }
+
+    .video{
+        float: left;
+        margin-bottom: 0;
+        width: 360px;
+        height: 205px;
+    }
+
+    .map{
+        float: right;
+        width: 360px;
+        height: 205px;
+    }
+}
+
+@media (max-width:800px){
+    body, html{
+        font-size: 15px;
+    }
+
+    header{
+        height: 100px;
+    }
+
+    .header-list, h1{
+        float: none;
+        margin-top: 0;
+    }
+
+    .header-list li{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .video{
+        float: none;
+        display: block;
+        margin: 0 auto 30px;
+    }
+
+    .map{
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:480px){
+    body, html{
+        font-size: 14px;
+     }
+
+    header{
+        height: auto;
+    }
+
+     .video, .map {
+        width: 260px;
+        height: 146px;       
+    }
+
+    .footer-list li{
+        padding-bottom: 20px;
+    }
+}

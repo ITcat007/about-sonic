@@ -1,0 +1,264 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body, html{
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    font-family: 'Jura', Arial, sans-serif;
+    color: aliceblue;
+    background-color: #010b2c;
+    background-image: url(img/sonic-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 80% 10%;
+}
+
+.wrapper{
+   min-height: 100%;
+   margin-bottom: -50px;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header{
+    height: 200px;
+    max-width: 100%;
+    border-bottom: 1px solid #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.header-list{
+    float: right;
+    list-style-type: none;
+    margin-top: 70px;
+}
+
+.header-list li{
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.header-list li:last-child{
+    padding-right: 0;
+}
+
+.header-list li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: aliceblue;
+}
+
+.header-list li a:hover {
+    text-decoration: underline;
+    color: #6dd1ee;
+    transition: all 0.5s ease;
+ }
+
+h1{
+    float: left;
+    margin-top: 70px;
+    font-family: 'Kanit', Arial, sans-serif;
+    font-size: 3rem;
+    line-height: 1;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #6dd1ee, #003cff);
+}
+
+main{  
+    margin-bottom: 50px;
+    padding: 50px 100px;
+}
+
+h2{
+    font-size: 2rem;
+    color: #6dd1ee;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.main-subtitle{
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+@keyframes turning {
+    0% {
+        transform:scaleX(0);
+    }
+    50% {
+        transform:scaleX(-1);
+    }
+    100% {
+        transform:scaleX(0);
+    }
+} 
+
+.ring{
+    margin: 0 auto;
+    width: 80px;
+    margin-bottom: 50px;
+}
+
+.ring img{
+    width: 100%;
+    animation-name: turning;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+h3{
+    margin-bottom: 20px;
+}
+
+form{
+    background-color: rgba(0, 60, 255, 0.1);
+    padding-bottom: 2rem;
+}
+
+table{
+    font-size: 1.1rem;
+    border-spacing: 2rem;
+}
+
+td{
+    margin-bottom: 20px;
+}
+
+input, select, textarea{    
+    font-size: 1.1rem;
+}
+
+#input-submit{
+    margin: 0 auto;
+    display: block;
+    background-color: #6dd1ee;
+    padding: 20px 30px;
+    border-radius: 30px;
+}
+
+#input-submit:hover{
+    outline: 4px solid rgb(15, 75, 255);
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-list{
+    list-style-type: none;
+    text-align: center;
+}
+
+.footer-list li{
+   display: inline-block;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.footer-list li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.footer-list li a:hover {
+    text-decoration: underline;
+    color: #6dd1ee;
+    transition: all 0.5s ease;
+ }
+
+footer nav ul li i {
+    margin-right: 7px;
+    font-size: 1.3rem;
+}
+
+@media (max-width:1440px) {
+    body, html{
+       font-size: 16px;
+    }
+}
+
+@media (max-width:935px){
+    main{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width:800px){
+    body, html{
+        font-size: 15px;
+    }
+
+    header{
+        height: 100px;
+    }
+
+    .header-list, h1{
+        float: none;
+        margin-top: 0;
+    }
+
+    .header-list li{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width:660px){
+    td{
+        display: block;
+    }
+}
+
+@media (max-width:480px){
+    body, html{
+        font-size: 14px;
+    }
+
+    header{
+        height: auto;
+    }
+    
+    table {
+        font-size: 1rem;
+        padding: 0 30px;
+    }
+
+    #input-name, #input-email, textarea{     
+        width: 100%;
+    }
+
+    .ring {
+        width: 60px;
+    }
+
+    .footer-list li{
+        padding-bottom: 20px;
+    }
+}
